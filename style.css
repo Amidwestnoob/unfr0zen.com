@@ -405,7 +405,7 @@ footer a { color: var(--muted); }
 
 @media (max-width: 600px) {
     header .btn { display: none; }
-    nav a { padding: 16px 10px 14px; }
+    nav a { padding: 16px 6px 14px; font-size: 0.9rem; }
     .tab { height: 80px; font-size: 0.9rem; }
     .grid { grid-template-columns: 1fr; }
 }
@@ -430,6 +430,7 @@ footer a { color: var(--muted); }
 }
 
 .doc h2 svg { width: 24px; height: 24px; }
+.doc h3 { font-size: 1.1rem; margin: 28px 0 8px; }
 
 .doc p, .doc li { color: #c4c8ce; overflow-wrap: break-word; }
 .doc b { color: var(--text); font-weight: 600; }
