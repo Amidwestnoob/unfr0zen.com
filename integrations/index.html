@@ -42,7 +42,7 @@
 
             <h2 id="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></svg>UNFR0ZEN menu</h2>
             <p>The install replaces the thermostat's <b>NEST APP</b> settings entry with <b>UNFR0ZEN</b>. It shows the Matter QR and pairing code with <b>Enable pairing</b>, Zigbee pairing with a 30-second countdown, and Doom. An integration's entry appears only when it was installed.</p>
-            <p>The original <code>nlclient</code> is saved once on the unit, at <code>/etc/unfr0zen/nlclient.original</code>, and kept across later installs. No prebuilt binary patches are used: the app links the menu into the unit's own <code>nlclient</code>. Supported versions and undo: <a href="https://github.com/unfr0zen/unfr0zen/blob/main/nlclient/README.md" target="_blank" rel="noopener">nlclient/README.md</a>.</p>
+            <p>The original <code>nlclient</code> is saved once on the unit, at <code>/etc/unfr0zen/nlclient.original</code>, and kept across later installs. No prebuilt binary patches are used: the app links the menu into the unit's own <code>nlclient</code>. Supported versions and undo: <a href="https://github.com/unfr0zen/unfr0zen/blob/main/platform/common/nlclient/README.md" target="_blank" rel="noopener">platform/common/nlclient/README.md</a>.</p>
 
             <h2 id="mqtt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/></svg>MQTT</h2>
             <div class="table-scroll">
@@ -91,7 +91,7 @@
                     </tbody>
                 </table>
             </div>
-            <p>The thermostat joins a Thread mesh as a router and serves Matter over it, beside Wi-Fi. The commissioner supplies the Thread credentials. It takes over the radio from Nest's Thread firmware (Heat Link), so it can't be combined with Zigbee. Experimental, and untested on a 2nd generation unit, whose radio holds one firmware at a time: nestlocal flashes a Thread image for it. Design and device details: <a href="https://github.com/unfr0zen/unfr0zen/blob/main/radio/thread/README.md" target="_blank" rel="noopener">radio/thread/README.md</a>.</p>
+            <p>The thermostat joins a Thread mesh as a router and serves Matter over it, beside Wi-Fi. The commissioner supplies the Thread credentials. It takes over the radio from Nest's Thread firmware (Heat Link), so it can't be combined with Zigbee. Experimental, and untested on a 2nd generation unit, whose radio holds one firmware at a time: nestlocal flashes a Thread image for it. Design and device details: <a href="https://github.com/unfr0zen/unfr0zen/blob/main/platform/common/radio/thread/README.md" target="_blank" rel="noopener">platform/common/radio/thread/README.md</a>.</p>
 
             <h2 id="zigbee"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg>Zigbee</h2>
             <div class="table-scroll">
